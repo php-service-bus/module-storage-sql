@@ -10,13 +10,13 @@
 
 declare(strict_types = 1);
 
-namespace ServiceBus\Storage\Sql\Tests;
+namespace ServiceBus\Storage\Module\Tests;
 
 use Monolog\Logger;
 use PHPUnit\Framework\TestCase;
 use ServiceBus\Storage\Common\DatabaseAdapter;
 use ServiceBus\Storage\Sql\DoctrineDBAL\DoctrineDBALAdapter;
-use ServiceBus\Storage\Sql\SqlStorageModule;
+use ServiceBus\Storage\Module\SqlStorageModule;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;

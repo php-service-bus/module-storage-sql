@@ -11,12 +11,29 @@
          beStrictAboutTestsThatDoNotTestAnything="false">
     <php>
         <ini name="error_reporting" value="-1"/>
-        <env name="TRANSPORT_CONNECTION_DSN" value="amqp://guest:guest@localhost:5672"/>
+        <env name="TEST_POSTGRES_DSN" value="pgsql://postgres:123456789@localhost:5432/test"/>
+        <env name="DATABASE_CONNECTION_DSN" value="sqlite:///:memory:"/>
     </php>
 
     <testsuites>
-        <testsuite name="Service bus amqp transport implementation">
+        <testsuite name="Service Bus SQL storage module">
             <directory>./tests/</directory>
+        </testsuite>
+
+        <testsuite name="Service Bus active record component">
+            <directory>./vendor/php-service-bus/active-record/tests/</directory>
+        </testsuite>
+
+        <testsuite name="Service Bus cache component">
+            <directory>./vendor/php-service-bus/cache/tests</directory>
+        </testsuite>
+
+        <testsuite name="Service Bus common storage component">
+            <directory>./vendor/php-service-bus/storage-common/tests</directory>
+        </testsuite>
+
+        <testsuite name="Service Bus sql storage implementation component">
+            <directory>./vendor/php-service-bus/storage-sql/tests</directory>
         </testsuite>
     </testsuites>
 

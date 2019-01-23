@@ -10,7 +10,7 @@
 
 declare(strict_types = 1);
 
-namespace ServiceBus\Storage\Sql;
+namespace ServiceBus\Storage\Module;
 
 use ServiceBus\Common\Module\ServiceBusModule;
 use ServiceBus\Storage\Common\DatabaseAdapter;

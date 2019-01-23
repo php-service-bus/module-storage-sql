@@ -14,21 +14,25 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "ServiceBus\\Storage\\Sql\\": "src/"
+      "ServiceBus\\Storage\\Module\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ServiceBus\\Storage\\Sql\\Tests\\": "tests/"
+      "ServiceBus\\Storage\\Module\\Tests\\": "tests/",
+      "ServiceBus\\Storage\\Sql\\Tests\\": "vendor/php-service-bus/storage-sql/tests",
+      "ServiceBus\\Storage\\ActiveRecord\\Tests\\": "vendor/php-service-bus/active-record/tests"
     }
   },
   "require": {
     "php": ">=7.2",
     "php-service-bus/common": "dev-master",
-    "php-service-bus/storage-sql": "dev-master"
+    "php-service-bus/storage-sql": "dev-master",
+    "php-service-bus/active-record": "dev-master"
 
   },
   "require-dev": {
+    "doctrine/dbal": "^v2.6",
     "symfony/dependency-injection": "^v4.2",
     "monolog/monolog": "^1.23",
     "phpunit/phpunit": "^7",

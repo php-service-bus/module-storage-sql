@@ -1,8 +1,14 @@
 {
   "name": "php-service-bus/module-storage-sql",
-  "description": "SQL adapters support module for PHP Service Bus",
+  "description": "SQL adapters support module",
   "type": "library",
-  "keywords": ["cqrs", "event-sourcing", "async-php", "command-bus", "messaging"],
+  "keywords": [
+    "async-php",
+    "command-bus",
+    "messaging",
+    "postgresql",
+    "sql"
+  ],
   "authors": [
     {
       "name": "Masiukevich Maksim",
@@ -19,9 +25,12 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "ServiceBus\\Storage\\Module\\Tests\\": "tests/",
+      "ServiceBus\\Common\\Tests\\": "vendor/php-service-bus/common/tests",
+      "ServiceBus\\Storage\\Common\\Tests\\": "vendor/php-service-bus/storage-common/tests",
       "ServiceBus\\Storage\\Sql\\Tests\\": "vendor/php-service-bus/storage-sql/tests",
-      "ServiceBus\\Storage\\ActiveRecord\\Tests\\": "vendor/php-service-bus/active-record/tests"
+      "ServiceBus\\Cache\\Tests\\": "vendor/php-service-bus/cache/tests",
+      "ServiceBus\\Storage\\ActiveRecord\\Tests\\": "vendor/php-service-bus/active-record/tests",
+      "ServiceBus\\Storage\\Module\\Tests\\": "tests/"
     }
   },
   "require": {
@@ -29,7 +38,6 @@
     "php-service-bus/common": "dev-master",
     "php-service-bus/storage-sql": "dev-master",
     "php-service-bus/active-record": "dev-master"
-
   },
   "require-dev": {
     "doctrine/dbal": "^v2.6",

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * SQL adapters support module for PHP Service Bus
+ * SQL adapters support module
  *
  * @author  Maksim Masiukevich <dev@async-php.com>
  * @license MIT
@@ -78,11 +78,13 @@ final class SqlStorageModule implements ServiceBusModule
     /**
      * Enable SQL queries logging
      *
-     * @return void
+     * @return $this
      */
-    public function enableLogger(): void
+    public function enableLogger(): self
     {
         $this->loggerEnabled = true;
+
+        return $this;
     }
 
     /**

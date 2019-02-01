@@ -4,8 +4,28 @@
 
 ## What is it?
 
-Module for working with relational databases in [service-bus](https://github.com/php-service-bus/service-bus) framework.
+Module for working with relational databases
 
 Contains packages:
 * [php-service-bus/storage-sql](https://github.com/php-service-bus/storage-sql): PostgreSQL\SQLite support
 * [php-service-bus/active-record](https://github.com/php-service-bus/active-record): Active record implementation
+
+## Installation
+
+```bash
+composer req php-service-bus/module-storage-sql
+```
+
+Example of module creation
+
+```php
+$module = SqlStorageModule::postgreSQL('pgsql://postgres:123456789@localhost:5432/test')
+   ->enableLogger(); // Enable logging of SQL queries
+
+```
+
+Enable module:
+
+```php
+$bootstrap->applyModules($module);
+```

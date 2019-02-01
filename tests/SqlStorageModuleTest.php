@@ -1,7 +1,7 @@
 <?php
 
 /**
- * SQL adapters support module for PHP Service Bus
+ * SQL adapters support module
  *
  * @author  Maksim Masiukevich <dev@async-php.com>
  * @license MIT

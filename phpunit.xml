@@ -37,8 +37,6 @@
             <directory>./tests/</directory>
         </testsuite>
 
-
-
     </testsuites>
 
     <filter>

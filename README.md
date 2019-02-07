@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/php-service-bus/module-storage-sql.svg?branch=master)](https://travis-ci.org/php-service-bus/module-storage-sql)
-[![Code Coverage](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/?branch=master)
+[![Build Status](https://travis-ci.org/php-service-bus/module-storage-sql.svg?branch=v3.0)](https://travis-ci.org/php-service-bus/module-storage-sql)
+[![Code Coverage](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/badges/coverage.png?b=v3.0)](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/?branch=v3.0)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/badges/quality-score.png?b=v3.0)](https://scrutinizer-ci.com/g/php-service-bus/module-storage-sql/?branch=v3.0)
 
 ## What is it?
 

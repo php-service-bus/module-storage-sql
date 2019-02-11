@@ -371,16 +371,16 @@
         },
         {
             "name": "php-service-bus/active-record",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/active-record.git",
-                "reference": "a02a8e244db46e1f8b4c64ad19e6c3a384ac6e5c"
+                "reference": "dd23418545e39f256a6d9046a198ecaa63865102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/a02a8e244db46e1f8b4c64ad19e6c3a384ac6e5c",
-                "reference": "a02a8e244db46e1f8b4c64ad19e6c3a384ac6e5c",
+                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/dd23418545e39f256a6d9046a198ecaa63865102",
+                "reference": "dd23418545e39f256a6d9046a198ecaa63865102",
                 "shasum": ""
             },
             "require": {
@@ -425,7 +425,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-02-11 12:45:12"
+            "time": "2019-02-11 14:48:14"
         },
         {
             "name": "php-service-bus/cache",

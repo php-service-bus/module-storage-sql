@@ -371,16 +371,16 @@
         },
         {
             "name": "php-service-bus/active-record",
-            "version": "v3.0.x-dev",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/active-record.git",
-                "reference": "c781584b67e82c1bc51bbc766a99bbc01322c9e2"
+                "reference": "a02a8e244db46e1f8b4c64ad19e6c3a384ac6e5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/c781584b67e82c1bc51bbc766a99bbc01322c9e2",
-                "reference": "c781584b67e82c1bc51bbc766a99bbc01322c9e2",
+                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/a02a8e244db46e1f8b4c64ad19e6c3a384ac6e5c",
+                "reference": "a02a8e244db46e1f8b4c64ad19e6c3a384ac6e5c",
                 "shasum": ""
             },
             "require": {
@@ -425,7 +425,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-02-07 11:51:12"
+            "time": "2019-02-11 12:45:12"
         },
         {
             "name": "php-service-bus/cache",
@@ -477,16 +477,16 @@
         },
         {
             "name": "php-service-bus/common",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/common.git",
-                "reference": "4832b5b1cf702eac55edddfdb62325aa20d5ba11"
+                "reference": "a9e3170dcd5523da89a0db97b27eed313e723738"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/common/zipball/4832b5b1cf702eac55edddfdb62325aa20d5ba11",
-                "reference": "4832b5b1cf702eac55edddfdb62325aa20d5ba11",
+                "url": "https://api.github.com/repos/php-service-bus/common/zipball/a9e3170dcd5523da89a0db97b27eed313e723738",
+                "reference": "a9e3170dcd5523da89a0db97b27eed313e723738",
                 "shasum": ""
             },
             "require": {
@@ -526,20 +526,20 @@
                 "command-bus",
                 "messaging"
             ],
-            "time": "2019-02-07 11:11:38"
+            "time": "2019-02-11 07:59:39"
         },
         {
             "name": "php-service-bus/storage-common",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/storage-common.git",
-                "reference": "276d1f37699b0cbf028b3077b0d8d4ba8b2d20a6"
+                "reference": "6ee58724072711bcb568d83831ce5bb95f677d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/storage-common/zipball/276d1f37699b0cbf028b3077b0d8d4ba8b2d20a6",
-                "reference": "276d1f37699b0cbf028b3077b0d8d4ba8b2d20a6",
+                "url": "https://api.github.com/repos/php-service-bus/storage-common/zipball/6ee58724072711bcb568d83831ce5bb95f677d2d",
+                "reference": "6ee58724072711bcb568d83831ce5bb95f677d2d",
                 "shasum": ""
             },
             "require": {
@@ -574,20 +574,20 @@
                 "command-bus",
                 "messaging"
             ],
-            "time": "2019-02-07 11:21:00"
+            "time": "2019-02-11 14:16:18"
         },
         {
             "name": "php-service-bus/storage-sql",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/storage-sql.git",
-                "reference": "3511bbaf9ebfcb68b607369e6eb96934e6542e0b"
+                "reference": "b99e6c93008bcb34f37975caf5dac59fad412d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/storage-sql/zipball/3511bbaf9ebfcb68b607369e6eb96934e6542e0b",
-                "reference": "3511bbaf9ebfcb68b607369e6eb96934e6542e0b",
+                "url": "https://api.github.com/repos/php-service-bus/storage-sql/zipball/b99e6c93008bcb34f37975caf5dac59fad412d6e",
+                "reference": "b99e6c93008bcb34f37975caf5dac59fad412d6e",
                 "shasum": ""
             },
             "require": {
@@ -634,7 +634,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-02-07 11:36:23"
+            "time": "2019-02-11 14:32:34"
         },
         {
             "name": "psr/log",
@@ -2188,16 +2188,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.3",
+            "version": "7.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2cb759721e53bc05f56487f628c6b9fbb6c18746"
+                "reference": "2896657da5fb237bc316bdfc18c2650efeee0dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2cb759721e53bc05f56487f628c6b9fbb6c18746",
-                "reference": "2cb759721e53bc05f56487f628c6b9fbb6c18746",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2896657da5fb237bc316bdfc18c2650efeee0dc0",
+                "reference": "2896657da5fb237bc316bdfc18c2650efeee0dc0",
                 "shasum": ""
             },
             "require": {
@@ -2268,7 +2268,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-01 05:24:07"
+            "time": "2019-02-07 14:15:04"
         },
         {
             "name": "psr/container",

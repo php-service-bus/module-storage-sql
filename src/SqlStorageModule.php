@@ -1,7 +1,7 @@
 <?php
 
 /**
- * SQL adapters support module
+ * SQL adapters support module.
  *
  * @author  Maksim Masiukevich <dev@async-php.com>
  * @license MIT
@@ -27,11 +27,12 @@ use Symfony\Component\DependencyInjection\Reference;
 final class SqlStorageModule implements ServiceBusModule
 {
     private const ADAPTER_TYPE_POSTGRES  = 'postgres';
+
     private const ADAPTER_TYPE_IN_MEMORY = 'memory';
 
     private const ADAPTERS_MAPPING = [
         self::ADAPTER_TYPE_IN_MEMORY => DoctrineDBALAdapter::class,
-        self::ADAPTER_TYPE_POSTGRES  => AmpPostgreSQLAdapter::class
+        self::ADAPTER_TYPE_POSTGRES  => AmpPostgreSQLAdapter::class,
     ];
 
     /**
@@ -45,14 +46,14 @@ final class SqlStorageModule implements ServiceBusModule
     private $connectionDSN;
 
     /**
-     * Log SQL queries
+     * Log SQL queries.
      *
      * @var bool
      */
     private $loggerEnabled = false;
 
     /**
-     * Configure PostgreSQL storage adapter
+     * Configure PostgreSQL storage adapter.
      *
      * DSN example: pgsql://user:password@host:port/database
      *
@@ -66,7 +67,7 @@ final class SqlStorageModule implements ServiceBusModule
     }
 
     /**
-     * Configure in memory adapter (tests only)
+     * Configure in memory adapter (tests only).
      *
      * @return self
      */
@@ -76,7 +77,7 @@ final class SqlStorageModule implements ServiceBusModule
     }
 
     /**
-     * Enable SQL queries logging
+     * Enable SQL queries logging.
      *
      * @return $this
      */
@@ -88,7 +89,7 @@ final class SqlStorageModule implements ServiceBusModule
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function boot(ContainerBuilder $containerBuilder): void
     {
@@ -98,14 +99,14 @@ final class SqlStorageModule implements ServiceBusModule
         $adapterClass = self::ADAPTERS_MAPPING[$this->adapterType];
 
         $configDefinition   = new Definition(StorageConfiguration::class, [
-            '%service_bus.infrastructure.sql.connection_dsn%'
+            '%service_bus.infrastructure.sql.connection_dsn%',
         ]);
 
         $containerBuilder->addDefinitions([StorageConfiguration::class => $configDefinition]);
 
         $adapterDefinitionParameters = [new Reference(StorageConfiguration::class)];
 
-        if(true === $this->loggerEnabled)
+        if (true === $this->loggerEnabled)
         {
             $adapterDefinitionParameters[] = new Reference('service_bus.logger');
         }

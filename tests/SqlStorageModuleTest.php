@@ -1,7 +1,7 @@
 <?php
 
 /**
- * SQL adapters support module
+ * SQL adapters support module.
  *
  * @author  Maksim Masiukevich <dev@async-php.com>
  * @license MIT
@@ -15,8 +15,8 @@ namespace ServiceBus\Storage\Module\Tests;
 use Monolog\Logger;
 use PHPUnit\Framework\TestCase;
 use ServiceBus\Storage\Common\DatabaseAdapter;
-use ServiceBus\Storage\Sql\DoctrineDBAL\DoctrineDBALAdapter;
 use ServiceBus\Storage\Module\SqlStorageModule;
+use ServiceBus\Storage\Sql\DoctrineDBAL\DoctrineDBALAdapter;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
@@ -29,9 +29,9 @@ final class SqlStorageModuleTest extends TestCase
     /**
      * @test
      *
-     * @return void
-     *
      * @throws \Throwable
+     *
+     * @return void
      */
     public function create(): void
     {

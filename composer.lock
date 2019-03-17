@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7ac58a0d62457bb00e9793ca9b732fe1",
-    "content-hash": "3fca8aa6ca54d18f82e1fd43662d392e",
+    "hash": "be9c935cfe67589961cf32edacd22cbe",
+    "content-hash": "229aafd17ed2fd49110e80a2211adeb8",
     "packages": [
         {
             "name": "amphp/amp",
@@ -371,23 +371,23 @@
         },
         {
             "name": "php-service-bus/active-record",
-            "version": "v3.0.9",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/active-record.git",
-                "reference": "627610e38b8ac59da63e131e80a6a2f248fa22de"
+                "reference": "5a2510ba250a08db3af9b0a0f3ef40c5897fc557"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/627610e38b8ac59da63e131e80a6a2f248fa22de",
-                "reference": "627610e38b8ac59da63e131e80a6a2f248fa22de",
+                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/5a2510ba250a08db3af9b0a0f3ef40c5897fc557",
+                "reference": "5a2510ba250a08db3af9b0a0f3ef40c5897fc557",
                 "shasum": ""
             },
             "require": {
                 "ext-pgsql": "*",
                 "php": ">=7.2",
                 "php-service-bus/cache": "^v3.0",
-                "php-service-bus/storage-sql": "^v3.0",
+                "php-service-bus/storage-sql": "^v3.1",
                 "ramsey/uuid": "^3.7"
             },
             "require-dev": {
@@ -426,7 +426,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-03-17 18:34:09"
+            "time": "2019-03-17 19:48:20"
         },
         {
             "name": "php-service-bus/cache",
@@ -533,16 +533,16 @@
         },
         {
             "name": "php-service-bus/storage-common",
-            "version": "v3.0.9",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/storage-common.git",
-                "reference": "6815e0f64bb74c5e5bb1d047831f8a21f2551293"
+                "reference": "48eb1fec1e88e5c11fb8030d1f757ec1ff6d16f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/storage-common/zipball/6815e0f64bb74c5e5bb1d047831f8a21f2551293",
-                "reference": "6815e0f64bb74c5e5bb1d047831f8a21f2551293",
+                "url": "https://api.github.com/repos/php-service-bus/storage-common/zipball/48eb1fec1e88e5c11fb8030d1f757ec1ff6d16f4",
+                "reference": "48eb1fec1e88e5c11fb8030d1f757ec1ff6d16f4",
                 "shasum": ""
             },
             "require": {
@@ -578,20 +578,20 @@
                 "command-bus",
                 "messaging"
             ],
-            "time": "2019-03-17 18:21:27"
+            "time": "2019-03-17 19:22:54"
         },
         {
             "name": "php-service-bus/storage-sql",
-            "version": "v3.0.9",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/storage-sql.git",
-                "reference": "d5da6392961285cfa39b9b72d8f36c0f62a90527"
+                "reference": "2992150a17b7f829b3ee0ff0991ec8d8375175b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/storage-sql/zipball/d5da6392961285cfa39b9b72d8f36c0f62a90527",
-                "reference": "d5da6392961285cfa39b9b72d8f36c0f62a90527",
+                "url": "https://api.github.com/repos/php-service-bus/storage-sql/zipball/2992150a17b7f829b3ee0ff0991ec8d8375175b7",
+                "reference": "2992150a17b7f829b3ee0ff0991ec8d8375175b7",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +599,7 @@
                 "ext-pgsql": "*",
                 "latitude/latitude": "^3.1",
                 "php": ">=7.2",
-                "php-service-bus/storage-common": "^v3.0",
+                "php-service-bus/storage-common": "^v3.1",
                 "psr/log": "1.1.*"
             },
             "require-dev": {
@@ -639,7 +639,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-03-17 18:25:42"
+            "time": "2019-03-17 19:43:16"
         },
         {
             "name": "psr/log",

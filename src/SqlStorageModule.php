@@ -95,7 +95,7 @@ final class SqlStorageModule implements ServiceBusModule
     {
         $this->injectParameters($containerBuilder);
 
-        /** @var class-string<\ServiceBus\Storage\Common\DatabaseAdapter> $adapterClass */
+        /** @psalm-var class-string<\ServiceBus\Storage\Common\DatabaseAdapter> $adapterClass */
         $adapterClass = self::ADAPTERS_MAPPING[$this->adapterType];
 
         $configDefinition   = new Definition(StorageConfiguration::class, [

@@ -328,16 +328,16 @@
         },
         {
             "name": "php-service-bus/active-record",
-            "version": "v3.2.2",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/active-record.git",
-                "reference": "12cb065b3fed62e17f6fca17e0f8056bbf6c025a"
+                "reference": "30112fb084d2e69e3237100c86c6dbd0608f93df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/12cb065b3fed62e17f6fca17e0f8056bbf6c025a",
-                "reference": "12cb065b3fed62e17f6fca17e0f8056bbf6c025a",
+                "url": "https://api.github.com/repos/php-service-bus/active-record/zipball/30112fb084d2e69e3237100c86c6dbd0608f93df",
+                "reference": "30112fb084d2e69e3237100c86c6dbd0608f93df",
                 "shasum": ""
             },
             "require": {
@@ -384,7 +384,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-04-12T10:09:40+00:00"
+            "time": "2019-05-14T19:08:34+00:00"
         },
         {
             "name": "php-service-bus/cache",
@@ -543,16 +543,16 @@
         },
         {
             "name": "php-service-bus/storage-sql",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-service-bus/storage-sql.git",
-                "reference": "9775f061e82fbeac929cd21b70ce2c78c520d239"
+                "reference": "5dbca430cb9975495ac7050b75d11b4f5d12c7ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-service-bus/storage-sql/zipball/9775f061e82fbeac929cd21b70ce2c78c520d239",
-                "reference": "9775f061e82fbeac929cd21b70ce2c78c520d239",
+                "url": "https://api.github.com/repos/php-service-bus/storage-sql/zipball/5dbca430cb9975495ac7050b75d11b4f5d12c7ac",
+                "reference": "5dbca430cb9975495ac7050b75d11b4f5d12c7ac",
                 "shasum": ""
             },
             "require": {
@@ -601,7 +601,7 @@
                 "postgresql",
                 "sql"
             ],
-            "time": "2019-05-14T16:50:56+00:00"
+            "time": "2019-05-14T19:02:22+00:00"
         },
         {
             "name": "psr/log",

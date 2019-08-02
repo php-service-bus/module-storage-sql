@@ -40,13 +40,13 @@
     "php-service-bus/active-record": "v3.3.*"
   },
   "require-dev": {
-    "php-service-bus/code-style-config": "^v0.1",
-    "doctrine/dbal": "^v2.6",
+    "php-service-bus/code-style-config": "v0.1.*",
+    "doctrine/dbal": "v2.9.*",
     "symfony/dependency-injection": "v4.3.*",
-    "monolog/monolog": "^1.23",
-    "phpunit/phpunit": "^8",
-    "vimeo/psalm": "^3",
-    "phpstan/phpstan": "0.11.*"
+    "monolog/monolog": "v1.23.*",
+    "phpunit/phpunit": "v8.3.*",
+    "vimeo/psalm": "v3.4.*",
+    "phpstan/phpstan": "v0.11.*"
   },
   "prefer-stable": true,
   "minimum-stability": "stable",

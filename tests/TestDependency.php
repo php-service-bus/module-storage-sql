@@ -14,15 +14,9 @@ namespace ServiceBus\Storage\Module\Tests;
 
 use ServiceBus\Storage\Common\DatabaseAdapter;
 
-/**
- * @property-read DatabaseAdapter $adapter
- */
 final class TestDependency
 {
-    /**
-     * @var DatabaseAdapter
-     */
-    public $adapter;
+    public DatabaseAdapter $adapter;
 
     /**
      * @param DatabaseAdapter $adapter

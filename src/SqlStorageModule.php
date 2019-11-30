@@ -35,22 +35,14 @@ final class SqlStorageModule implements ServiceBusModule
         self::ADAPTER_TYPE_POSTGRES  => AmpPostgreSQLAdapter::class,
     ];
 
-    /**
-     * @var string
-     */
-    private $adapterType;
+    private string $adapterType;
 
-    /**
-     * @var string
-     */
-    private $connectionDSN;
+    private string $connectionDSN;
 
     /**
      * Log SQL queries.
-     *
-     * @var bool
      */
-    private $loggerEnabled = false;
+    private bool $loggerEnabled = false;
 
     /**
      * Configure PostgreSQL storage adapter.
@@ -58,8 +50,6 @@ final class SqlStorageModule implements ServiceBusModule
      * DSN example: pgsql://user:password@host:port/database
      *
      * @param string $connectionDSN
-     *
-     * @return self
      */
     public static function postgreSQL(string $connectionDSN): self
     {
@@ -68,8 +58,6 @@ final class SqlStorageModule implements ServiceBusModule
 
     /**
      * Configure in memory adapter (tests only).
-     *
-     * @return self
      */
     public static function inMemory(): self
     {
@@ -78,8 +66,6 @@ final class SqlStorageModule implements ServiceBusModule
 
     /**
      * Enable SQL queries logging.
-     *
-     * @return $this
      */
     public function enableLogger(): self
     {
@@ -116,20 +102,11 @@ final class SqlStorageModule implements ServiceBusModule
         $containerBuilder->addDefinitions([DatabaseAdapter::class => $adapterDefinition]);
     }
 
-    /**
-     * @param ContainerBuilder $containerBuilder
-     *
-     * @return void
-     */
     private function injectParameters(ContainerBuilder $containerBuilder): void
     {
         $containerBuilder->setParameter('service_bus.infrastructure.sql.connection_dsn', $this->connectionDSN);
     }
 
-    /**
-     * @param string $adapterType
-     * @param string $connectionDSN
-     */
     private function __construct(string $adapterType, string $connectionDSN)
     {
         $this->adapterType   = $adapterType;

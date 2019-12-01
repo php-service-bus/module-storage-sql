@@ -40,7 +40,7 @@
     "php-service-bus/active-record": "v4.0.*"
   },
   "require-dev": {
-    "php-service-bus/code-style-config": "v1.1.*",
+    "php-service-bus/code-style-config": "v1.2.*",
     "doctrine/dbal": "v2.10.*",
     "symfony/dependency-injection": "v5.0.*",
     "monolog/monolog": "v2.0.*",

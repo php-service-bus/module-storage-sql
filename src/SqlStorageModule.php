@@ -35,14 +35,18 @@ final class SqlStorageModule implements ServiceBusModule
         self::ADAPTER_TYPE_POSTGRES  => AmpPostgreSQLAdapter::class,
     ];
 
-    private string $adapterType;
+    /** @var string  */
+    private $adapterType;
 
-    private string $connectionDSN;
+    /** @var string  */
+    private $connectionDSN;
 
     /**
      * Log SQL queries.
+     *
+     * @var bool
      */
-    private bool $loggerEnabled = false;
+    private $loggerEnabled = false;
 
     /**
      * Configure PostgreSQL storage adapter.

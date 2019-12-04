@@ -16,7 +16,8 @@ use ServiceBus\Storage\Common\DatabaseAdapter;
 
 final class TestDependency
 {
-    public DatabaseAdapter $adapter;
+    /** @var DatabaseAdapter */
+    public $adapter;
 
     /**
      * @param DatabaseAdapter $adapter
